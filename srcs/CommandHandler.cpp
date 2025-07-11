@@ -6,7 +6,7 @@
 /*   By: mdemare <mdemare@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 15:43:05 by mdemare           #+#    #+#             */
-/*   Updated: 2025/07/10 15:43:57 by mdemare          ###   ########.fr       */
+/*   Updated: 2025/07/11 09:46:55 by mdemare          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,8 @@ CommandHandler &CommandHandler::operator=(const CommandHandler &src)
 {
 	std::cout << BLUE << "CommandHandler Assigment operator called" << RESET << std::endl;
 	if (this != &src)
-		*this = src;
+	{
+		
+	}
 	return (*this);
 }

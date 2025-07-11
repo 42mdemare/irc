@@ -6,7 +6,7 @@
 /*   By: mdemare <mdemare@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 13:14:08 by mdemare           #+#    #+#             */
-/*   Updated: 2025/07/10 15:44:13 by mdemare          ###   ########.fr       */
+/*   Updated: 2025/07/11 10:02:20 by mdemare          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ class Client
 private:
 	std::string _nickname;
 	std::string _username;
-	std::string _password; //?? encrypt??
 	bool _isAuthenticated;
 	int _operatorLvl; //0 : user, 1 : moderator, 2 : admin ...
 
@@ -39,14 +38,12 @@ public:
 
 	std::string getNickname() const;
 	std::string getUsername() const;
-	std::string getPassword() const;
 
 	bool getIsAuthentificated() const;
 	int getOperatorLvl() const;
 
 	void setNickname(std::string nickname);
 	void setUsername(std::string username);
-	void setPassword(std::string password);
 	void setIsAuthentificated(bool isAuthentificated);
 	void setOperatorLvl(int operatorLvl);
 	

@@ -6,7 +6,7 @@
 /*   By: mdemare <mdemare@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 14:12:31 by mdemare           #+#    #+#             */
-/*   Updated: 2025/07/10 15:52:58 by mdemare          ###   ########.fr       */
+/*   Updated: 2025/07/11 10:02:14 by mdemare          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,10 +35,8 @@ Client &Client::operator=(const Client &src)
 	{
 		this->_nickname = src.getNickname();
 		this->_username = src.getUsername();
-		this->_password = src.getPassword();
 		this->_isAuthenticated = src.getIsAuthentificated();
 		this->_operatorLvl = src.getOperatorLvl();
-		*this = src;
 	}
 	return (*this);
 }
@@ -51,11 +49,6 @@ std::string Client::getNickname() const
 std::string Client::getUsername() const
 {
 	return (this->_username);
-}
-
-std::string Client::getPassword() const
-{
-	return (this->_password);
 }
 
 bool Client::getIsAuthentificated() const
@@ -80,20 +73,15 @@ void Client::setUsername(std::string username)
 		this->_username = username;
 }
 
-void Client::setPassword(std::string password)
-{
-	if (password.c_str())
-		this->_password = password;
-}
-
 void Client::setIsAuthentificated(bool isAuthentificated)
 {
-	if (isAuthentificated)
-		this->_isAuthenticated = isAuthentificated;
+	this->_isAuthenticated = isAuthentificated;
 }
 
 void Client::setOperatorLvl(int operatorLvl)
 {
-	if (operatorLvl)
-		this->_operatorLvl = operatorLvl;
+	if (operatorLvl >= 0 && operatorLvl <= 2)
+    {
+        this->_operatorLvl = operatorLvl;
+    }
 }

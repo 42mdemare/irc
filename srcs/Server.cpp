@@ -6,7 +6,7 @@
 /*   By: mdemare <mdemare@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 09:44:47 by mdemare           #+#    #+#             */
-/*   Updated: 2025/07/10 15:58:24 by mdemare          ###   ########.fr       */
+/*   Updated: 2025/07/11 09:44:11 by mdemare          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,6 @@ Server &Server::operator=(const Server &src)
 	{
 		this->_port = src._port;
 		this->_password = src._password;
-		// *this = src;
 	}
 	return (*this);
 }

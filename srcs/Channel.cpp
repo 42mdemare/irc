@@ -6,7 +6,7 @@
 /*   By: mdemare <mdemare@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 15:43:00 by mdemare           #+#    #+#             */
-/*   Updated: 2025/07/10 15:44:36 by mdemare          ###   ########.fr       */
+/*   Updated: 2025/07/11 09:46:38 by mdemare          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,8 @@ Channel &Channel::operator=(const Channel &src)
 {
 	std::cout << BLUE << "Channel Assigment operator called" << RESET << std::endl;
 	if (this != &src)
-		*this = src;
+	{
+		
+	}
 	return (*this);
 }

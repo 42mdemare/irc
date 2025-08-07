@@ -1,0 +1,8 @@
+*.pdf
+*.odt
+*.odt#
+ircserv
+.vscode
+*.o
+*.txt
+README.md

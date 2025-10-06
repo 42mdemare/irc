@@ -1,61 +1,74 @@
 [![ft_irc](https://github.com/ayogun/42-project-badges/blob/main/badges/ft_irce.png)](https://github.com/ayogun/42-project-badges/blob/main/badges/ft_irce.png)
 
-# 💬 42 ft_irc - 115% ✅  
+# 💬 42 ft_irc – 115 % ✅
 
-**ft_irc** is a **multi-client chat server project** inspired by the Internet Relay Chat (IRC) protocol.  
-The goal is to create a fully functional **chat server and client** using **sockets**, allowing multiple users to communicate in **real-time channels** while exploring **network programming, concurrency, and server-client architecture**.  
+**ft_irc** est un **projet de serveur de discussion multi-clients** inspiré du protocole Internet Relay Chat (**IRC**).  
+L’objectif est de créer un **serveur et un client de discussion** entièrement fonctionnels utilisant des **sockets**, permettant à plusieurs utilisateurs de communiquer dans des **canaux en temps réel**, tout en explorant la **programmation réseau**, la **concurrence** et l’**architecture client-serveur**.  
 
-### New skills unlocked  
+---
 
-- **Network Programming** → Using TCP sockets to communicate between clients and server.  
-- **Concurrency & Multiplexing** → Handling multiple clients simultaneously with `poll`.  
-- **Command Parsing** → Interpreting IRC commands (`NICK`, `USER`, `JOIN`, `PART`, `PRIVMSG`, `QUIT`).  
-- **Channels & Messaging** → Creating channels, broadcasting messages, and private messaging.  
-- **Error Handling & Security** → Validating commands, preventing crashes, and managing client connections.  
-- **Memory Management** → Dynamic allocation for client structures and messages.  
+### 🧠 Nouvelles compétences acquises  
 
-## 🏗️ Project Requirements  
+- **Programmation réseau** → Utiliser des sockets TCP pour la communication entre le serveur et les clients.  
+- **Concurrence et multiplexage** → Gérer plusieurs clients simultanément grâce à `poll`.  
+- **Analyse de commandes** → Interpréter les commandes IRC (`NICK`, `USER`, `JOIN`, `PART`, `PRIVMSG`, `QUIT`).  
+- **Canaux et messagerie** → Créer des canaux, diffuser des messages et gérer les messages privés.  
+- **Gestion des erreurs et sécurité** → Valider les commandes, éviter les crashs et gérer les connexions clients.  
+- **Gestion de la mémoire** → Allocation dynamique pour les structures clients et les messages.  
 
-### 🎯 Server Objectives  
-- Accept multiple **client connections**.  
-- Support **IRC commands**:  
-  - `NICK` → Set nickname  
-  - `USER` → Register user information  
-  - `JOIN` → Join a channel  
-  - `PART` → Leave a channel  
-  - `PRIVMSG` → Send private messages or channel messages  
-  - `QUIT` → Disconnect from the server  
-- Maintain **client and channel structures**.  
-- Broadcast messages to clients **within the same channel**.  
-- Handle client **disconnects gracefully**.  
+---
 
-### 🎮 Client Objectives  
-- Connect to the server using **hostname** and **port**.  
-- Send IRC commands and receive **real-time messages**.  
-- Display **channel messages, private messages, and server notifications**.  
+## 🏗️ Exigences du projet  
 
-## ⚙️ Setup 
+### 🎯 Objectifs du serveur  
+- Accepter plusieurs **connexions clients** simultanées.  
+- Prendre en charge les **commandes IRC** suivantes :  
+  - `NICK` → Définit le pseudonyme de l’utilisateur  
+  - `USER` → Enregistre les informations de l’utilisateur  
+  - `JOIN` → Rejoint un canal  
+  - `PART` → Quitte un canal  
+  - `PRIVMSG` → Envoie un message privé ou un message sur un canal  
+  - `QUIT` → Se déconnecte du serveur  
+- Maintenir des structures pour les **clients et les canaux**.  
+- Diffuser les messages à tous les clients **du même canal**.  
+- Gérer les **déconnexions** des clients proprement.  
 
-### Clone the repository and install dependencies:  
+---
+
+### 🎮 Objectifs du client  
+- Se connecter au serveur en utilisant un **nom d’hôte** et un **port**.  
+- Envoyer des commandes IRC et recevoir des **messages en temps réel**.  
+- Afficher les **messages de canaux**, **messages privés** et **notifications du serveur**.  
+
+---
+
+## ⚙️ Installation  
+
+### Cloner le dépôt et compiler le projet :  
 ```bash
 git clone git@github.com:axelhoizai/42-IRC.git && cd 42-IRC
 make
 ```
 
-### Start the server:  
+---
+
+### Démarrer le serveur :  
 ```bash
 ./ircserv 6667
 ```
 
-### Connect a client in a new terminal:  
+---
+
+### Se connecter avec un client (dans un nouveau terminal) :  
 ```bash
 nc 127.0.0.1 6667
 ```
 
-## Contributors
+---
 
-[Louise Collonge](https://github.com/louisecollonge)  
-[Mickael Demare](https://github.com/KaliStudio)  
-[Axel Hoizai](https://github.com/axelhoizai) 
+## 👥 Contributeurs  
 
+- [Louise Collonge](https://github.com/louisecollonge)  
+- [Mickael Demare](https://github.com/KaliStudio)  
+- [Axel Hoizai](https://github.com/axelhoizai)
 

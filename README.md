@@ -46,7 +46,7 @@ L’objectif est de créer un **serveur et un client de discussion** entièremen
 
 ### Cloner le dépôt et compiler le projet :  
 ```bash
-git clone git@github.com:axelhoizai/42-IRC.git && cd 42-IRC
+git clone git@github.com:42mdemare/irc.git && cd irc
 make
 ```
 
